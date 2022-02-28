@@ -1,4 +1,6 @@
 git push origin --all
 git init -->untuk initialisasi github file
 git add . -->menambahkan ke wroking directory
+git add namafile -->untuk pindahkan dari wroking directory
+ke staging indek
 git status --> melihat status apakah ada yang ditambahkan file atau tidak
