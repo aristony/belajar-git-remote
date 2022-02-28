@@ -4,3 +4,4 @@ git add . -->menambahkan ke wroking directory
 git add namafile -->untuk pindahkan dari wroking directory
 ke staging indek
 git status --> melihat status apakah ada yang ditambahkan file atau tidak
+git commit -m "test1" -->menambahkan ke file repository
