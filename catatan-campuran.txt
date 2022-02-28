@@ -1,0 +1,1 @@
+- git diff -->melihat apa yang terjadi di perubahannya
