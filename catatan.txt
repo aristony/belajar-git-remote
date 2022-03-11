@@ -146,4 +146,45 @@ haulaitot
 Status: running
 https://haulaitot.000webhostapp.com/
 
+
+ constructor(props){
+    super(props)
+    this.state={
+      TextInputName:'',
+      TextInputEmail:'',
+      TextInputPhoneNumber:'',
+
+    }
+  }
+
+
+InsertUser = ()=>{
+    const {TextInputName} = this.state;
+    const {TextInputEmail} = this.state;
+    const {TextInputPhoneNumber} = this.state;
+    
+
+   Alert.alert('hello')
+    fetch('http://localhost', {
+      method : 'POST',
+      headers:{
+        'Accept':'application/json',
+        'content-Type' :'application/json'
+      },
+      body:JSON.stringify({
+       name: TextInputName,
+       email:TextInputEmail,
+       phone_number:TextInputPhoneNumber,
+
+      })
+    }).then((response) =>response.json())
+      .then((responseJson)=>{
+      Alert.alert(responseJson)
+
+      }).catch((error)=>{
+        console.error(error)
+      })
+
+  }
+
 sandika.github.io
